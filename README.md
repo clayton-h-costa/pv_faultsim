@@ -1,22 +1,20 @@
-# Cases that can be simulated
-* Normal (No Fault)
-* Short-Circuit
-* Degradation
-* Open Circuit
-* Shading 
-* MPPT Fault
-
-# PV System's description
-
-* 2 Arrays of eight 330W PV Modules
-* 2 Stages Power Inverter (DC/DC MPPT* Controled Power Converter -- Grid Connected DC/AC Power Converter)
-  * MPPT's Algorithm: Perturb & Observ
+# The project
+* 1 - What is this project?
+	* This project was created with the purpose of allow the simulation of several faults (and a non-fault situation) on a grid-connected photovoltaic system.
+* 2 - Which faults can be simulated?
+	* Short-Circuit
+	* Degradation
+	* Open Circuit
+	* Shading 
+	* MPPT Fault
+* 3 - Which software was used to develop and use this project?
+	* Matlab R2018a / Simulink
+	* PSim 9.0
+* 4 - What is the PV System's description?
+	* 2 Arrays of eight 330W PV Modules [Datasheet available at:(https://www.canadiansolar.com/upload/83b21fe2080dc7c1/1952d42e21351e39.pdf)] - Last visit: 12-March-2019
+	* 2 Stages Power Inverter (DC/DC MPPT* Controled Power Converter -- Grid Connected DC/AC Power Converter)
+  	* MPPT's Algorithm: Perturb & Observ
   
-# Softwares used to development and use of this project:
-
-* Matlab R2018a / Simulink
-* PSim 9.0
-
 # How to easily run:
   * 1 - Open 'SimCases.slx' with MATLAB/Simulink, double click the SimCoupler box and set the path for the project's folder / P_SIM_MAIN.psimsch file.
 * 2 - Copy your Dataset's file (with irradiance and temperature values) to the project's folder.
@@ -32,7 +30,7 @@
 # Files:
 * 1 - Main.m
   * This MATLAB Script controls all other files
-  *	1.1 - The simulations will run in batches. If you set to run 2000 lines of data within a 10 batch amount, for instance, it will run 200 simulations of 10 data each.
+  *	1.1 - The simulations will run in batches. If you set to run 2000 lines of data with batches = 10, for instance, it will run 200 simulations with 10 data each.
   *	1.2 - When you run this file, a ".mat" file will be created for each fault. Whenever a simulation finished, it will update the file correspondent to the current case with the features.
   *	1.3 - The features save in each file are: VS1 (Voltage at String1), VS2 (Voltage at String2), IS1 (Current at String1), IS2 (Current at String2), VP1 (AC Voltage [Grid]), IP1 (AC Current), G (Irradiance) and T (Temperature)
   *	1.4 - The matrices will be  AxB, where A is the simulation number and B is iteration within A
