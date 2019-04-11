@@ -1,6 +1,24 @@
+% Main script for the MATLAB / PSim Grid-Tie PV system and Faults
+% Simulation.
+%
+% Change Configs 001 ~ 006, at the start of this file before run
+% Configs:
+%   001 - 1D Array with Cases to simulate, where: 1=Normal, 2=ShortCircuit, 3=Degradation, 4=OpenCircuit, 5=Shadow, 6=MPPTFault
+%   002 - Int value of amount of data to be used per simulation run
+%   003 - Int value of amount of lines from the Irradiance/Temperature
+%   database to be used
+%   004 - String with the database (.xlsx) file
+%   005 - Array with the columns on the database where the Temperature and
+%   Irradiance can be found [Temperature, Irradiance]
+%   006 - Minimum Irradiance to be used
+%
+%   The Default's database used can be found at: http://www.gecad.isep.ipp.pt/Ies2/Weather%20Data/gecad-weather.xlsx
+%   But any database can be used (Temperature must be in ºC and Irradiance in W/m²)
+
+
 % Initialization
 
-clear all; close all; warning off; clc 									% Clear all
+clear all; close all; warning off; clc 	% Clear all
 save('Normal'); save('Short'); save('Degrad'); save('OpenCircuit'); save('Shadow'); save('MPPT')	% Create Fault Files
 rng('default')												% Set RNG Seed
 
