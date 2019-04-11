@@ -47,7 +47,7 @@
   *	This is the simulink model that controls and runs the Simulation.
 
 * 3 - Func_SepDays.m
-  *	It's the MATLAB function that setup de dataset into the right format for it to be used in this project.
+  *	It's the MATLAB function that setup the dataset into the right format for it to be used in this project.
 
 * 4 - Func_FaultGen.m
   *	This MATLAB function will properly generate the "Config.txt" file use by the PSim's simulation. This file have the values for: Short-Circuit Resistors, Degradation Resistors, Open Circuit Switches, MPPT Gain and Shadow Gain.
