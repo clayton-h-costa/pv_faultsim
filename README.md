@@ -20,7 +20,7 @@
 * 6 - Can i use other parameters for the Faults?
 	* These can be changed at the function 'Func_FaultGen.m'
   
-# How to easily run:
+# How to run:
   * 1 - Open 'SimCases.slx' with MATLAB/Simulink, double click the SimCoupler box and set the path for the project's folder / P_SIM_MAIN.psimsch file.
 * 2 - Copy your Dataset's file (with irradiance and temperature values) to the project's folder.
 * 3 - Open 'Main.m' with MATLAB, set the configurations at the "Configuration" Section.
