@@ -14,6 +14,11 @@
 	* 2 Arrays of eight 330W PV Modules [Datasheet available at:(https://www.canadiansolar.com/upload/83b21fe2080dc7c1/1952d42e21351e39.pdf)] - Last visit: 12-March-2019
 	* 2 Stages Power Inverter (DC/DC MPPT* Controled Power Converter -- Grid Connected DC/AC Power Converter)
   	* MPPT's Algorithm: Perturb & Observ
+* 5 - Can i use other PV Modules or Topolgy?
+	* The electrical circuit can be easily changed with PSim 9.0 (.psimsch files)
+	* The PV Module's parameters, can be changed at the 'P_SIM_PVMODULE' file.
+* 6 - Can i use other parameters for the Faults?
+	* These can be changed at the function 'Func_FaultGen.m'
   
 # How to easily run:
   * 1 - Open 'SimCases.slx' with MATLAB/Simulink, double click the SimCoupler box and set the path for the project's folder / P_SIM_MAIN.psimsch file.
