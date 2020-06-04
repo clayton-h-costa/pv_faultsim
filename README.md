@@ -62,6 +62,4 @@
   *	6.4 - P_SIM_DCDC.psimsch - Contains the DC/DC Converter with the MPPT algorithm (P_SIM_MPPT.psimsch).
   *	6.5 - P_SIM_DCAC.psimsch - Contains the DC/AC Converter.
   
-  
- # Questions & Suggestions
-  * For any questions and/or suggestions, please feel free to e-mail us at: clayton_hdc@hotmail.com
+
